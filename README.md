@@ -15,20 +15,25 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The global software test automation market is estimated at **$28 billion to $35 billion** (scaling toward $85B+ over the next decade at a ~14% CAGR). The sector is **moderately fragmented**: enterprise testing remains anchored by scaled consolidation platforms (such as Tricentis and BrowserStack), yet open-source frameworks (Playwright, Selenium) and continuous entry of specialized AI-driven and browser-based record/replay tools prevent a single winner-take-all outcome.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[BrowserStack Test Companion](https://www.browserstack.com/docs/test-companion/web-testing)** | **IDE extension (not a browser extension)** that brings AI-powered testing into your development workflow. Describe what to test in plain language; it generates test cases from PRDs, live sites, or code diffs, writes automation scripts in your project's framework, fixes flaky tests, and scans for accessibility violations. Supports web and mobile app modes . | Included with BrowserStack subscription | No standalone free tier; trial via BrowserStack |
-| **[Testim Editor (Chrome Extension)](https://chromewebstore.google.com/detail/testim-editor/pebeiooilphfmbohdbhbomomkkoghoia)** | Chrome extension for recording and playing back functional UI tests in Testim. Records user journeys into configurable steps with AI-based Smart Locators that adapt when element attributes change. Syncs to Testim cloud for CI-driven cross-browser execution . | Quote-only (Tricentis platform) | Extension free to install; requires Testim account |
-| **[mabl (Browser Plugin)](https://www.getapp.nl/software/122447/mabl)** | Lightweight browser plugin for creating scriptless tests by recording user actions. Features auto-healing via machine learning, visual monitoring, and CI/CD integrations (Jenkins, Jira, Bamboo). Reviewers note it is a paid tool with no free tier, and pricing is a common concern . | Quote-only (per-user or usage-based) | No free tier; trial via sales |
-| **[Ghost Inspector (Web Test Recorder)](https://chromewebstore.google.com/detail/ghost-inspector-web-test/aicdiabnghjnejfempeinmnphllefehc)** | Chrome extension for recording automated website tests in the browser, then syncing to Ghost Inspector's cloud service for continuous regression execution. Requires a Ghost Inspector account to use the recording tool . | Quote-only (Ghost Inspector subscription) | Extension free; requires paid account |
-| **[Katalon Recorder](https://chromewebstore.google.com/detail/katalon-recorder-selenium/ljdobmomdgdljniojadhoplhkpialdid)** | **No longer actively maintained.** Free Chrome extension positioned as a Selenium IDE alternative for recording and exporting Selenium scripts, with reports, screenshots, and dashboards. Test artifacts stored locally—no data transmitted to servers . | Free | **Free**: extension is free; no further updates or security patches planned |
+| Product | Company Scale (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Trial Limits |
+|---------|-------------------------------------|-------------|------------------|--------------------------|
+| **[Testim Editor (Tricentis)](https://chromewebstore.google.com/detail/testim-editor/pebeiooilphfmbohdbhbomomkkoghoia)** | **$4.5B valuation** (~$500M ARR; parent Tricentis backed by GTCR/Insight) | Chrome extension for recording and playing back functional UI tests in Testim with AI-based Smart Locators. Syncs to cloud for CI-driven cross-browser execution. | **$450/month** (Starter / Essentials entry tier, annual commitment) | **Free forever Community plan** (up to 1,000 web test runs/month locally & basic cloud execution); also offers a 14-day free trial |
+| **[BrowserStack Test Companion](https://www.browserstack.com/docs/test-companion/web-testing)** | **$4.0B valuation** (~$225M ARR; funded by BOND, Insight, Accel) | IDE & testing extension that brings AI-powered testing into workflows. Generates test cases from PRDs/diffs, authoring automation scripts and diagnosing failures. | **$29/month** (Live desktop individual plan; Automate parallel runs start at $99/mo) | **No permanent free tier**; Free trial provides 30 minutes of manual Live testing and 100 minutes of automated testing |
+| **[mabl (Browser Plugin)](https://www.getapp.nl/software/122447/mabl)** | **~$360M valuation** (~$18M–$25M ARR; $76M total funding led by Vista Equity) | Scriptless browser extension recorder with auto-healing locators, visual regression monitoring, and API/performance test generation. | **$450/month** (Starter tier entry baseline, credit-based annual contract) | **No permanent free tier**; 14-day free trial with full platform access (local CLI/trainer runs are free) |
+| **[Katalon Studio / Recorder](https://chromewebstore.google.com/detail/katalon-recorder-selenium/ljdobmomdgdljniojadhoplhkpialdid)** | **~$150M–$200M est. valuation** (~$40M–$50M ARR; $30M Series A via Elephant VC) | Automated test authoring tool suite and companion browser recorder for generating, debugging, and exporting Selenium/Appium scripts. *(Note: Katalon Recorder extension itself is maintenance-mode).* | **$150/user/month** (Katalon Studio Enterprise, billed annually) | **Free forever plan** (Katalon Studio Free desktop edition for local test authoring and execution; extension is 100% free; 30-day enterprise trial available) |
+| **[Ghost Inspector (Web Test Recorder)](https://chromewebstore.google.com/detail/ghost-inspector-web-test/aicdiabnghjnejfempeinmnphllefehc)** | **Bootstrapped / Acquired** (Profitable SMB SaaS acquired by SureSwift Capital, ~$3M–$7M est. ARR) | Browser extension for recording end-to-end automated website user tests and visual assertions directly in Chrome/Firefox. Syncs to cloud for scheduled runs. | **$109/month** (Starter plan billed annually, or $125/month billed monthly) | **No permanent free tier**; 14-day free trial (no credit card required) with full Scale-tier feature access and up to 10,000 test runs |
 
 ## Open-Source GitHub Projects
 
