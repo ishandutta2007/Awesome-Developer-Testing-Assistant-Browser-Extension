@@ -1,6 +1,6 @@
 # Awesome-Developer-Testing-Assistant-Browser-Extension
 
-# Top Developer Testing Assistant & Browser Extension Ecosystem
+## Top Developer Testing Assistant & Browser Extension Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Record-and-Playback, Request Interception & Exploratory Testing Aids*  
