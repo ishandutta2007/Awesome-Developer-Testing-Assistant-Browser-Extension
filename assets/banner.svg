@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0b0f19; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#070a14" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Vibrant Gradient Accents -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pill-grad-4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#c2410c" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Ambient Glowing Orbs Filters -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="70" result="blur" />
+    </filter>
+    <filter id="glow-purple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="85" result="blur" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.15); }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-18px) translateX(12px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+    }
+    @keyframes dashCycle {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -60; }
+    }
+    @keyframes pulseRing {
+      0% { r: 16px; opacity: 0.6; }
+      50% { r: 24px; opacity: 0; }
+      100% { r: 16px; opacity: 0.6; }
+    }
+    .orb-cyan {
+      animation: pulseOrb 8s ease-in-out infinite;
+      transform-origin: 200px 80px;
+    }
+    .orb-purple {
+      animation: pulseOrb 10s ease-in-out infinite alternate;
+      transform-origin: 1000px 280px;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dashCycle 3s linear infinite;
+    }
+    .particle {
+      animation: floatParticle 5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+
+  <!-- Animated Ambient Glows (Behind all content) -->
+  <circle class="orb-cyan" cx="220" cy="80" r="160" fill="#0284c7" filter="url(#glow-cyan)" />
+  <circle class="orb-purple" cx="980" cy="270" r="180" fill="#7c3aed" filter="url(#glow-purple)" />
+  <circle cx="600" cy="180" r="240" fill="#38bdf8" opacity="0.08" filter="url(#glow-cyan)" />
+
+  <!-- Dynamic Technical Grid Pattern -->
+  <g opacity="0.12">
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="180" x2="1200" y2="180" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="#38bdf8" stroke-width="1" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="#38bdf8" stroke-width="1" />
+
+    <line x1="150" y1="0" x2="150" y2="360" stroke="#818cf8" stroke-width="1" />
+    <line x1="300" y1="0" x2="300" y2="360" stroke="#818cf8" stroke-width="1" />
+    <line x1="600" y1="0" x2="600" y2="360" stroke="#818cf8" stroke-width="1" />
+    <line x1="900" y1="0" x2="900" y2="360" stroke="#818cf8" stroke-width="1" />
+    <line x1="1050" y1="0" x2="1050" y2="360" stroke="#818cf8" stroke-width="1" />
+  </g>
+
+  <!-- Flow Circuit Simulation Lines (Background dynamic animation) -->
+  <g opacity="0.45">
+    <path class="flow-line" d="M 60 90 L 260 90 L 320 140 L 480 140" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <path class="flow-line" d="M 720 220 L 880 220 L 940 270 L 1140 270" fill="none" stroke="#c084fc" stroke-width="1.8" />
+  </g>
+
+  <!-- Floating particles -->
+  <circle class="particle" cx="180" cy="130" r="3" fill="#38bdf8" style="animation-delay: 0s;" />
+  <circle class="particle" cx="340" cy="270" r="2.5" fill="#818cf8" style="animation-delay: 1.5s;" />
+  <circle class="particle" cx="860" cy="80" r="3" fill="#c084fc" style="animation-delay: 0.8s;" />
+  <circle class="particle" cx="1020" cy="180" r="2" fill="#34d399" style="animation-delay: 2.2s;" />
+
+  <!-- Center Foreground Content Container (High z-index visual clarity) -->
+  <g>
+    <!-- Top Category Pill / Breadcrumb -->
+    <g transform="translate(600, 52)">
+      <rect x="-170" y="-14" width="340" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <circle cx="-148" cy="0" r="4" fill="#34d399" />
+      <text x="-136" y="4.5" fill="#94a3b8" font-size="11.5" font-weight="600" letter-spacing="1.2">CURATED ECOSYSTEM DIRECTORY</text>
+    </g>
+
+    <!-- Main Title (Gradient Foreground) -->
+    <text x="600" y="128" text-anchor="middle" fill="url(#primary-grad)" font-size="40" font-weight="800" letter-spacing="-0.8">
+      Developer Testing Assistant
+    </text>
+    <text x="600" y="172" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="700" letter-spacing="-0.5">
+      &amp; Browser Extension Ecosystem
+    </text>
+
+    <!-- Tagline Subtitle (Clear high-contrast text) -->
+    <text x="600" y="218" text-anchor="middle" fill="#94a3b8" font-size="15" font-weight="400">
+      The authoritative guide to in-browser record-and-playback, traffic interception &amp; exploratory testing
+    </text>
+
+    <!-- Feature Pills / Badges in Foreground -->
+    <g transform="translate(600, 275)">
+      <!-- Pill 1: Record & Playback -->
+      <g transform="translate(-360, 0)">
+        <rect x="0" y="0" width="165" height="34" rx="17" fill="url(#pill-grad-1)" stroke="#0284c7" stroke-width="1.2" />
+        <text x="82.5" y="21" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="600">⏺ Record &amp; Replay</text>
+      </g>
+
+      <!-- Pill 2: HTTP Interception -->
+      <g transform="translate(-180, 0)">
+        <rect x="0" y="0" width="170" height="34" rx="17" fill="url(#pill-grad-2)" stroke="#7c3aed" stroke-width="1.2" />
+        <text x="85" y="21" text-anchor="middle" fill="#c084fc" font-size="12" font-weight="600">⚡ Traffic Interception</text>
+      </g>
+
+      <!-- Pill 3: Exploratory QA -->
+      <g transform="translate(5, 0)">
+        <rect x="0" y="0" width="170" height="34" rx="17" fill="url(#pill-grad-3)" stroke="#059669" stroke-width="1.2" />
+        <text x="85" y="21" text-anchor="middle" fill="#34d399" font-size="12" font-weight="600">🔍 Exploratory Testing</text>
+      </g>
+
+      <!-- Pill 4: Open Source & SaaS -->
+      <g transform="translate(190, 0)">
+        <rect x="0" y="0" width="170" height="34" rx="17" fill="url(#pill-grad-4)" stroke="#ea580c" stroke-width="1.2" />
+        <text x="85" y="21" text-anchor="middle" fill="#fb923c" font-size="12" font-weight="600">🚀 SaaS &amp; Open Source</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Polished Outer Border -->
+  <rect x="1" y="1" width="1198" height="358" rx="12" fill="none" stroke="#1e293b" stroke-width="2" />
+</svg>
