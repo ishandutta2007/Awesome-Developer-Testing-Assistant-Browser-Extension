@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension?color=yellow" alt="Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Developer-Testing-Assistant-Browser-Extension?color=blue" alt="License"/></a>
@@ -66,7 +66,7 @@ Explore the open-source ecosystem of browser extensions engineered for QA automa
 
 ### Top Open-Source Testing & Recorder Extensions
 
-| Project | GitHub Stars | Description | Primary Capabilities |
+| Project | GitHub_Stars | Description | Primary Capabilities |
 |:---|:---:|:---|:---|
 | **[Checkly Headless Recorder](https://github.com/checkly/headless-recorder)** | [![Stars](https://img.shields.io/github/stars/checkly/headless-recorder?style=social&color=white)](https://github.com/checkly/headless-recorder/stargazers) | **Open-source Chrome extension that records user interactions and converts them into Playwright and Puppeteer scripts.** Clean test generator with support for data-testid attributes, pauses, and element assertions. | ⏺ Playwright / Puppeteer script generation, selector tuning, headless browser testing |
 | **[Requestly](https://github.com/requestly/requestly)** | [![Stars](https://img.shields.io/github/stars/requestly/requestly?style=social&color=white)](https://github.com/requestly/requestly/stargazers) | **The preeminent open-source browser extension for HTTP interception and API mocking.** Trusted by 300,000+ developers. Modifies network requests without setting up an external proxy daemon. Now part of BrowserStack. | ⚡ API client, REST & GraphQL mocking, HTTP header manipulation, URL redirects, user session replay |
@@ -93,7 +93,7 @@ We love community contributions! To add a new testing extension or update detail
 
 1. 🍴 **Fork** this repository.
 2. 🌿 **Create a branch** for your feature (`git checkout -b feature/add-new-tool`).
-3. ✏️ **Edit `README.md`** following the established table formats (ensure accurate star badges, link to official resources, and verify pricing details).
+3. ✏️ **Edit `README.md`** following the established table formats (ensure accurate Stars_Badges, link to official resources, and verify pricing details).
 4. 📬 **Submit a Pull Request** with a brief summary of the project's features and utility.
 
 Please make sure added tools have active maintenance, factual descriptions, and clear links.
